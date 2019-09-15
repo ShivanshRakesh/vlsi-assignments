@@ -1,0 +1,17 @@
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100evq100-5 
+
+ Number of Slices:                        2  out of    960     0%  
+ Number of 4 input LUTs:                  3  out of   1920     0%  
+ Number of IOs:                           7
+ Number of bonded IOBs:                   7  out of     66    10%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------

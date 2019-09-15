@@ -1,0 +1,9 @@
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                        4  out of   4656     0%  
+ Number of 4 input LUTs:                  8  out of   9312     0%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    232     5%  
