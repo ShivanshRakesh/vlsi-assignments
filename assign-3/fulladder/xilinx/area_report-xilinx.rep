@@ -1,0 +1,15 @@
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of 4 input LUTs:                 2 out of   9,312    1%
+Logic Distribution:
+  Number of occupied Slices:              1 out of   4,656    1%
+    Number of Slices containing only related logic:       1 out of       1 100%
+    Number of Slices containing unrelated logic:          0 out of       1   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:           2 out of   9,312    1%
+  Number of bonded IOBs:                  5 out of     232    2%
+
+Average Fanout of Non-Clock Nets:                1.60
