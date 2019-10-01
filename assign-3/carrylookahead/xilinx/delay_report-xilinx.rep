@@ -2,7 +2,7 @@
 Timing constraint: Default path analysis
   Total number of paths / destination ports: 321 / 17
 -------------------------------------------------------------------------
-Delay:               21.690ns (Levels of Logic = 18)
+Delay:               21.534ns (Levels of Logic = 18)
   Source:            b<0> (PAD)
   Destination:       c_out (PAD)
 
@@ -11,25 +11,25 @@ Delay:               21.690ns (Levels of Logic = 18)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             2   1.106   0.532  b_0_IBUF (b_0_IBUF)
-     LUT3:I0->O            2   0.612   0.449  cla1/carry_1_or00001 (cla1/carry<1>)
+     LUT3:I0->O            2   0.612   0.449  cla1/Mxor_sum<1>_Result11 (N4)
      LUT3:I1->O            2   0.612   0.449  cla1/carry_2_or00001 (cla1/carry<2>)
-     LUT3:I1->O            2   0.612   0.449  cla1/carry_3_or00001 (cla1/carry<3>)
-     LUT3:I1->O            2   0.612   0.449  cla1/c_out1 (carry0)
-     LUT3:I1->O            2   0.612   0.449  cla2/carry_1_or00001 (cla2/carry<1>)
+     LUT3:I1->O            2   0.612   0.410  cla1/Mxor_sum<3>_Result11 (N6)
+     LUT3:I2->O            2   0.612   0.449  carry_4_or00001 (carry<4>)
+     LUT3:I1->O            2   0.612   0.449  cla2/Mxor_sum<1>_Result11 (N5)
      LUT3:I1->O            2   0.612   0.449  cla2/carry_2_or00001 (cla2/carry<2>)
-     LUT3:I1->O            2   0.612   0.449  cla2/carry_3_or00001 (cla2/carry<3>)
-     LUT3:I1->O            2   0.612   0.449  cla2/c_out1 (carry1)
-     LUT3:I1->O            2   0.612   0.449  cla3/carry_1_or00001 (cla3/carry<1>)
+     LUT3:I1->O            2   0.612   0.410  cla2/Mxor_sum<3>_Result11 (N8)
+     LUT3:I2->O            2   0.612   0.449  carry_8_or00001 (carry<8>)
+     LUT3:I1->O            2   0.612   0.449  cla3/Mxor_sum<1>_Result11 (N7)
      LUT3:I1->O            2   0.612   0.449  cla3/carry_2_or00001 (cla3/carry<2>)
-     LUT3:I1->O            2   0.612   0.449  cla3/carry_3_or00001 (cla3/carry<3>)
-     LUT3:I1->O            2   0.612   0.449  cla3/c_out1 (carry2)
-     LUT3:I1->O            2   0.612   0.449  cla4/carry_1_or00001 (cla4/carry<1>)
+     LUT3:I1->O            2   0.612   0.410  cla3/Mxor_sum<3>_Result11 (N10)
+     LUT3:I2->O            2   0.612   0.449  carry_12_or00001 (carry<12>)
+     LUT3:I1->O            2   0.612   0.449  cla4/Mxor_sum<1>_Result11 (N9)
      LUT3:I1->O            2   0.612   0.449  cla4/carry_2_or00001 (cla4/carry<2>)
-     LUT3:I1->O            2   0.612   0.449  cla4/carry_3_or00001 (cla4/carry<3>)
-     LUT3:I1->O            1   0.612   0.357  cla4/c_out1 (c_out_OBUF)
+     LUT3:I1->O            2   0.612   0.410  cla4/Mxor_sum<3>_Result11 (N111)
+     LUT3:I2->O            1   0.612   0.357  c_out1 (c_out_OBUF)
      OBUF:I->O                 3.169          c_out_OBUF (c_out)
     ----------------------------------------
-    Total                     21.690ns (14.067ns logic, 7.623ns route)
-                                       (64.9% logic, 35.1% route)
+    Total                     21.534ns (14.067ns logic, 7.467ns route)
+                                       (65.3% logic, 34.7% route)
 
 =========================================================================
