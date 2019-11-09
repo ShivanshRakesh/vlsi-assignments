@@ -1,0 +1,18 @@
+//INPUT PINS
+net "inp[3]" loc = "R17";
+net "inp[2]" loc = "N17";
+net "inp[1]" loc = "L13";
+net "inp[0]" loc = "L14";
+
+
+//OUTPUT PINS
+//Displaying only real part of output 
+//due to limited number of LEDs
+net "rout_3[1]" loc = "R4";
+net "rout_3[0]" loc = "F4";
+net "rout_2[1]" loc = "P15";
+net "rout_2[0]" loc = "E17";
+net "rout_1[1]" loc = "K14";
+net "rout_1[0]" loc = "K15";
+net "rout_0[1]" loc = "J15";
+net "rout_0[0]" loc = "J14";

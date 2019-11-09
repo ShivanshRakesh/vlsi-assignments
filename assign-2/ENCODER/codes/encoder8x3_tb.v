@@ -15,6 +15,7 @@ module encoder8x3_tb;
 	wire x0;
 	wire x1;
 	wire x2;
+	wire v;
 
 	// Instantiate the Unit Under Test (UUT)
 	encoder8x3 uut (
@@ -28,7 +29,8 @@ module encoder8x3_tb;
 		.a7(a7), 
 		.x0(x0), 
 		.x1(x1), 
-		.x2(x2), 
+		.x2(x2),
+		.v(v),
 		.en(en)
 	);
 

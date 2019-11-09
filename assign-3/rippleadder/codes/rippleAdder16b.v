@@ -13,10 +13,10 @@ module rippleAdder4b(a, b, c, s_out, c_out);
 	inout c_out;
  	wire carry0, carry1, carry2;
 
- 	fullAdder fa1(a[0], b[0], c, s_out[0], carry0);
-   fullAdder fa2(a[1], b[1], carry0, s_out[1], carry1);
-   fullAdder fa3(a[2], b[2], carry1, s_out[2], carry2);
-   fullAdder fa4(a[3], b[3], carry2, s_out[3], c_out);
+    fullAdder fa1(a[0], b[0], c, s_out[0], carry0);
+    fullAdder fa2(a[1], b[1], carry0, s_out[1], carry1);
+    fullAdder fa3(a[2], b[2], carry1, s_out[2], carry2);
+    fullAdder fa4(a[3], b[3], carry2, s_out[3], c_out);
 endmodule
 
 module rippleAdder16b(a, b, c, s_out, c_out);

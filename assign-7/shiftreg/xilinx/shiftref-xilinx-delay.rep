@@ -1,0 +1,68 @@
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 2.406ns (frequency: 415.628MHz)
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               2.406ns (Levels of Logic = 2)
+  Source:            tmp_0 (FF)
+  Destination:       tmp_0 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: tmp_0 to tmp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.482  tmp_0 (tmp_0)
+     LUT3:I2->O            1   0.704   0.000  Mmux_tmp_mux0000_3 (Mmux_tmp_mux0000_3)
+     MUXF5:I1->O           1   0.321   0.000  Mmux_tmp_mux0000_2_f5 (tmp_mux0000<0>)
+     FD:D                      0.308          tmp_0
+    ----------------------------------------
+    Total                      2.406ns (1.924ns logic, 0.482ns route)
+                                       (80.0% logic, 20.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 24 / 4
+-------------------------------------------------------------------------
+Offset:              3.483ns (Levels of Logic = 3)
+  Source:            select<0> (PAD)
+  Destination:       tmp_0 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: select<0> to tmp_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.932  select_0_IBUF (select_0_IBUF)
+     LUT3:I0->O            1   0.704   0.000  Mmux_tmp_mux0000_3 (Mmux_tmp_mux0000_3)
+     MUXF5:I1->O           1   0.321   0.000  Mmux_tmp_mux0000_2_f5 (tmp_mux0000<0>)
+     FD:D                      0.308          tmp_0
+    ----------------------------------------
+    Total                      3.483ns (2.551ns logic, 0.932ns route)
+                                       (73.2% logic, 26.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            tmp_3 (FF)
+  Destination:       OUT<3> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: tmp_3 to OUT<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  tmp_3 (tmp_3)
+     OBUF:I->O                 3.272          OUT_3_OBUF (OUT<3>)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================

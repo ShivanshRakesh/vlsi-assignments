@@ -1,0 +1,18 @@
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of Slice Flip Flops:             3 out of   9,312    1%
+  Number of 4 input LUTs:                 4 out of   9,312    1%
+Logic Distribution:
+  Number of occupied Slices:              3 out of   4,656    1%
+    Number of Slices containing only related logic:       3 out of       3 100%
+    Number of Slices containing unrelated logic:          0 out of       3   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:           4 out of   9,312    1%
+  Number of bonded IOBs:                  7 out of     232    3%
+    IOB Latches:                          1
+  Number of BUFGMUXs:                     2 out of      24    8%
+
+Average Fanout of Non-Clock Nets:                2.29

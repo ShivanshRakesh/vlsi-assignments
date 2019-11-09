@@ -1,0 +1,87 @@
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.153ns (frequency: 464.393MHz)
+  Total number of paths / destination ports: 5 / 3
+-------------------------------------------------------------------------
+Delay:               2.153ns (Levels of Logic = 2)
+  Source:            c (FF)
+  Destination:       c (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: c to c
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.514   0.481  c (c)
+     LUT3:I2->O            1   0.612   0.000  c_or000012 (c_or000011)
+     MUXF5:I0->O           1   0.278   0.000  c_or00001_f5 (c_or0000)
+     FDE:D                     0.268          c
+    ----------------------------------------
+    Total                      2.153ns (1.672ns logic, 0.481ns route)
+                                       (77.6% logic, 22.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 9 / 3
+-------------------------------------------------------------------------
+Offset:              3.588ns (Levels of Logic = 3)
+  Source:            b (PAD)
+  Destination:       s_out (FF)
+  Destination Clock: clk rising
+
+  Data Path: b to s_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.106   0.603  b_IBUF (b_IBUF)
+     LUT2:I0->O            1   0.612   0.387  _old_c_11_SW0 (N2)
+     LUT4:I2->O            1   0.612   0.000  Mxor_s_out_xor0000_xo<0>1 (s_out_xor0000)
+     FDC:D                     0.268          s_out
+    ----------------------------------------
+    Total                      3.588ns (2.598ns logic, 0.990ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            s_out (FF)
+  Destination:       s_out (PAD)
+  Source Clock:      clk rising
+
+  Data Path: s_out to s_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.514   0.357  s_out (s_out_OBUF)
+     OBUF:I->O                 3.169          s_out_OBUF (s_out)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'rst'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.114ns (Levels of Logic = 1)
+  Source:            c_out (LATCH)
+  Destination:       c_out (PAD)
+  Source Clock:      rst falling
+
+  Data Path: c_out to c_out
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.357  c_out (c_out_OBUF)
+     OBUF:I->O                 3.169          c_out_OBUF (c_out)
+    ----------------------------------------
+    Total                      4.114ns (3.757ns logic, 0.357ns route)
+                                       (91.3% logic, 8.7% route)
+
+=========================================================================

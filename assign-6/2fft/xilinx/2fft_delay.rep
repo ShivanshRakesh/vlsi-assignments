@@ -1,0 +1,24 @@
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 48 / 18
+-------------------------------------------------------------------------
+Delay:               6.140ns (Levels of Logic = 3)
+  Source:            inp<0> (PAD)
+  Destination:       rout_1<2> (PAD)
+
+  Data Path: inp<0> to rout_1<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             7   1.106   0.754  inp_0_IBUF (inp_0_IBUF)
+     LUT2:I0->O            4   0.612   0.499  rout_3<1>1 (rout_3_1_OBUF)
+     OBUF:I->O                 3.169          rout_1_2_OBUF (rout_1<2>)
+    ----------------------------------------
+    Total                      6.140ns (4.887ns logic, 1.253ns route)
+                                       (79.6% logic, 20.4% route)
+
+=========================================================================

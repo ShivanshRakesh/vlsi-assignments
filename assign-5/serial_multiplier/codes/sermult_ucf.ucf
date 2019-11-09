@@ -1,0 +1,20 @@
+net "A[0]" loc = "R17";  
+net "A[1]" loc = "N17";  
+net "A[2]" loc = "L13";  
+net "A[3]" loc = "L14";  
+net "B[0]" loc = "K17";  
+net "B[1]" loc = "K18";  
+net "B[2]" loc = "H18";  
+net "B[3]" loc = "G18";
+
+net "clk" loc= "D18";
+net "rst" loc="E18"; 
+
+net "P[0]" loc  = "P4" ; 
+net "P[1]" loc  = "E4" ; 
+net "P[2]" loc  = "P16" ; 
+net "P[3]" loc  = "E16" ;
+net "P[4]" loc  = "K14" ; 
+net "P[5]" loc  = "K15" ; 
+net "P[6]" loc  = "J15" ; 
+net "P[7]" loc  = "J14" ; 

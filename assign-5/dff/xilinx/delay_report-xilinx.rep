@@ -1,0 +1,43 @@
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.258ns (Levels of Logic = 1)
+  Source:            rst (PAD)
+  Destination:       q (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.357  rst_IBUF (rst_IBUF)
+     FDR:R                     0.795          q
+    ----------------------------------------
+    Total                      2.258ns (1.901ns logic, 0.357ns route)
+                                       (84.2% logic, 15.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            q (FF)
+  Destination:       q (PAD)
+  Source Clock:      clk rising
+
+  Data Path: q to q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.514   0.357  q (q_OBUF)
+     OBUF:I->O                 3.169          q_OBUF (q)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
