@@ -1,0 +1,15 @@
+NET "CLK" loc = "B8"; 
+net "RESET" loc = "H13";
+net "tmpout" loc = "J14";
+net "INP[0]" loc = "R17";
+net "INP[1]" loc = "N17";
+net "INP[2]" loc = "L13";
+net "INP[3]" loc = "L14";
+net "leftInp" loc = "K17";
+net "rightInp" loc = "K18";
+net "select[1]" loc = "H18";
+net "select[0]" loc = "G18";
+net "OUT[0]" loc = "R4";
+net "OUT[1]" loc = "F4";
+net "OUT[2]" loc = "P15";
+net "OUT[3]" loc = "E17";

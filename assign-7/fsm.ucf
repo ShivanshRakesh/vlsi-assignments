@@ -1,0 +1,14 @@
+NET "CLK" loc="B8"; 
+net "ONE" loc = "R17";
+net "ZERO" loc = "N17";
+net "RESET" loc = "L13";
+//net "rst" loc = "D18";
+net "OUT" loc = "R4";
+net "tmpout" loc = "J14";
+net "tmpone" loc = "K15";
+net "tmpzero" loc = "J15";
+
+net "state[0]" loc = "K14";
+net "state[1]" loc = "E17";
+net "state[2]" loc = "P15";
+net "state[3]" loc = "F4";

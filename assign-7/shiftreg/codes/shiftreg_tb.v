@@ -33,6 +33,7 @@ module shiftreg_tb;
 
 	// Outputs
 	wire [3:0] OUT;
+	wire CLKOUT;
 
 	// Instantiate the Unit Under Test (UUT)
 	univShiftReg uut (
@@ -41,7 +42,8 @@ module shiftreg_tb;
 		.OUT(OUT),
 		.select(select), 
 		.leftInp(leftInp), 
-		.rightInp(rightInp)
+		.rightInp(rightInp),
+		.CLKOUT(CLKOUT)
 	);
 
 	initial begin

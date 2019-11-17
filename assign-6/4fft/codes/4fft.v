@@ -21,5 +21,4 @@ module fft4 (inp, rout_0, rout_1, rout_2, rout_3, iout_0, iout_1, iout_2, iout_3
 
 	assign rout_3 = rout_1;
 	assign iout_3 = inp[1] - inp[3];
-
 endmodule

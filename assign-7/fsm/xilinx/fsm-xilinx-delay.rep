@@ -4,65 +4,65 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'CLK'
-  Clock period: 3.064ns (frequency: 326.371MHz)
-  Total number of paths / destination ports: 11 / 4
+  Clock period: 3.190ns (frequency: 313.480MHz)
+  Total number of paths / destination ports: 18 / 6
 -------------------------------------------------------------------------
-Delay:               3.064ns (Levels of Logic = 2)
-  Source:            state_FSM_FFd2 (FF)
-  Destination:       OUT (FF)
+Delay:               3.190ns (Levels of Logic = 2)
+  Source:            state_FSM_FFd4 (FF)
+  Destination:       state_FSM_FFd2 (FF)
   Source Clock:      CLK rising
   Destination Clock: CLK rising
 
-  Data Path: state_FSM_FFd2 to OUT
+  Data Path: state_FSM_FFd4 to state_FSM_FFd2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              4   0.591   0.622  state_FSM_FFd2 (state_FSM_FFd2)
-     LUT3_L:I2->LO         1   0.704   0.135  OUT_mux0000_SW0 (N3)
-     LUT3:I2->O            1   0.704   0.000  OUT_mux0000 (OUT_mux0000)
-     FDC:D                     0.308          OUT
+     FDR:C->Q              6   0.591   0.704  state_FSM_FFd4 (state_FSM_FFd4)
+     LUT4_L:I2->LO         1   0.704   0.179  state_FSM_FFd2-In_SW0 (N10)
+     LUT2:I1->O            1   0.704   0.000  state_FSM_FFd2-In1 (state_FSM_FFd2-In1)
+     FDRS:D                    0.308          state_FSM_FFd2
     ----------------------------------------
-    Total                      3.064ns (2.307ns logic, 0.757ns route)
-                                       (75.3% logic, 24.7% route)
+    Total                      3.190ns (2.307ns logic, 0.883ns route)
+                                       (72.3% logic, 27.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
-  Total number of paths / destination ports: 4 / 4
+  Total number of paths / destination ports: 16 / 8
 -------------------------------------------------------------------------
-Offset:              3.831ns (Levels of Logic = 3)
-  Source:            INP (PAD)
-  Destination:       OUT (FF)
+Offset:              3.957ns (Levels of Logic = 3)
+  Source:            ONE (PAD)
+  Destination:       state_FSM_FFd2 (FF)
   Destination Clock: CLK rising
 
-  Data Path: INP to OUT
+  Data Path: ONE to state_FSM_FFd2
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.218   0.762  INP_IBUF (INP_IBUF)
-     LUT3_L:I0->LO         1   0.704   0.135  OUT_mux0000_SW0 (N3)
-     LUT3:I2->O            1   0.704   0.000  OUT_mux0000 (OUT_mux0000)
-     FDC:D                     0.308          OUT
+     IBUF:I->O             6   1.218   0.844  ONE_IBUF (ONE_IBUF)
+     LUT4_L:I0->LO         1   0.704   0.179  state_FSM_FFd2-In_SW0 (N10)
+     LUT2:I1->O            1   0.704   0.000  state_FSM_FFd2-In1 (state_FSM_FFd2-In1)
+     FDRS:D                    0.308          state_FSM_FFd2
     ----------------------------------------
-    Total                      3.831ns (2.934ns logic, 0.897ns route)
-                                       (76.6% logic, 23.4% route)
+    Total                      3.957ns (2.934ns logic, 1.023ns route)
+                                       (74.1% logic, 25.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
-Offset:              4.310ns (Levels of Logic = 1)
-  Source:            OUT (FF)
+Offset:              4.394ns (Levels of Logic = 1)
+  Source:            state_FSM_FFd1 (FF)
   Destination:       OUT (PAD)
   Source Clock:      CLK rising
 
-  Data Path: OUT to OUT
+  Data Path: state_FSM_FFd1 to OUT
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              2   0.591   0.447  OUT (OUT_OBUF)
+     FDRS:C->Q             3   0.591   0.531  state_FSM_FFd1 (state_FSM_FFd1)
      OBUF:I->O                 3.272          OUT_OBUF (OUT)
     ----------------------------------------
-    Total                      4.310ns (3.863ns logic, 0.447ns route)
-                                       (89.6% logic, 10.4% route)
+    Total                      4.394ns (3.863ns logic, 0.531ns route)
+                                       (87.9% logic, 12.1% route)
 
 =========================================================================
